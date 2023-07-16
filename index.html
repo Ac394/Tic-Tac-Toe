@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>X's & O's</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+
+<body>
+  <div class='intro'>
+    <div class='names'>
+      <h2>Player Details</h2>
+      <form>
+        <div class="input-container">
+          <div class="inputWrap">
+            <p>X</p>
+            <label for="player1">PLAYER 1</label>
+            <input type="text" id="player1" name="player1" placeholder="Enter Name">
+          </div>
+          <div class="inputWrap">
+            <p>O</p>
+            <label for="player2">PLAYER 2</label>
+            <input type="text" id="player2" name="player2" placeholder="Enter Name">
+          </div>
+        </div>
+        <button type="submit" id='formBtn'>START</button>
+      </form>
+    </div>
+  </div>
+  <div class="results-container">
+    <div class='results'>
+      <p class='winner'>It's a draw!</p>
+      <div class='btn-container'>
+        <button class="quit">Quit</button>
+        <button class='next-round'>Next Round</button>
+      </div>
+    </div>
+  </div>
+  <div class='gameboard'>
+    <header>
+      <div class='logo'>X's & O's</div>
+      <div class='turn'></div>
+      <button class='reset'><span class="material-symbols-outlined">refresh</span>
+      </button>
+    </header>
+    <div class="grid">
+      <button row='0' col='0' class='cell hover1'></button>
+      <button row='0' col='1' class='cell hover1'></button>
+      <button row='0' col='2' class='cell hover1'></button>
+      <button row='1' col='0' class='cell hover1'></button>
+      <button row='1' col='1' class='cell hover1'></button>
+      <button row='1' col='2' class='cell hover1'></button>
+      <button row='2' col='0' class='cell hover1'></button>
+      <button row='2' col='1' class='cell hover1'></button>
+      <button row='2' col='2' class='cell hover1'></button>
+    </div>
+    <div class='score'>
+      <div class="score1">
+        <div class="scoreName1"></div>
+        <div class="scoreNumber1"></div>
+      </div>
+      <div class="score2">
+        <div class="scoreName2"></div>
+        <div class="scoreNumber2"></div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+
+</html>
